@@ -18,7 +18,7 @@
                 <span>Балов</span>
             </div>
             <div class="result__congratulations text-[64px]">
-                <span>ОТЛИЧНО !!! ТАК ДЕРЖАТЬ !!!</span>
+                <span>ОТЛИЧНО ! ТАК ДЕРЖАТЬ !</span>
             </div>
         </div>
     </div>
