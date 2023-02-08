@@ -20,8 +20,8 @@
                 </div>
             </div>
             <div class="question__buttons flex justify-between items-center w-full gap-[200px]">
-                <a @click="previousQuestion()" class="question__previous text-[36px] cursor-pointer">Предыдущий</a>
-                <a @click="nextQuestion()" class="question__next text-[36px] cursor-pointer" v-show="!finish">Следующий</a>
+                <a @click="checkQuestionsStatus()  | previousQuestion()" class="question__previous text-[36px] cursor-pointer">Предыдущий</a>
+                <a @click="checkQuestionsStatus()  | nextQuestion()" class="question__next text-[36px] cursor-pointer" v-show="!finish">Следующий</a>
                 <nuxt-link to="/result" v-show="finish" class="text-[36px]"><button class="block w-full"
                         @click="checkAnswers">Завершить</button></nuxt-link>
             </div>
@@ -30,25 +30,19 @@
             <div class="navigation__time text-[36px] text-center">
                 <span id="navigation__time">{{ timerMinutes }}:{{ timerSeconds }}</span>
             </div>
-            <div class="navigation__questions border-solid border-black border-[1px] p-[22px] flex justify-between w-[300px] flex-wrap gap-[8px]">
+            <div class="navigation__questions border-solid border-black border-[1px] p-[22px] flex w-[300px] flex-wrap gap-[16px]">
                 <div v-for="question in currentCourseAndModuleQuestions" :key="question.index" class="navigation__quetsion-answerGiven text-[36px]">
-                    <span  class="flex flex-col cursor-pointer" :id="question.id" @click="selectAnswer([question.id, question.questionIndex])">{{ question.questionIndex }}</span>
+                    <span  class="flex flex-col cursor-pointer" :id="question.id" @click=" checkQuestionsStatus() | selectAnswer([question.id, question.questionIndex])">{{ question.questionIndex }}</span>
                 </div>
-                <!-- <div class="navigation__quetsion-noAnswerGiven text-[36px]">
-                    <span>2 <br> X</span>
-                </div>
-                <div class="navigation__quetsion text-[36px]">
-                    <span>3</span>
-                </div> -->
             </div>
-            <!-- <div class="navigation__info">
+            <div class="navigation__info">
                 <div class="navigation__answerGiven text-[36px]">
                     <span>✓ - Ответ получен</span>
                 </div>
                 <div class="navigation__noAnswerGiven text-[36px]">
                     <span>X - Вопрос пропущен</span>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 </template>
@@ -150,21 +144,14 @@ export default {
             this.isActive = true;
         },
         checkQuestionsStatus() {
-            for(let item of this.currentCourseAndModule) {
-                console.log(item);
-                if (item.selectedAnswer.text !== '') {
-                    for(let item2 of this.currentCourseAndModuleQuestions) {
-                        let questionStatus = document.getElementById(item2.id)
-                        questionStatus.classList.add('answerGiven')
-                        questionStatus.classList.remove('answerNotGiven')
-                    }
-                } else {
-                    for(let item2 of this.currentCourseAndModuleQuestions) {
-                        let questionStatus = document.getElementById(item2.id)
-                        questionStatus.classList.add('answerNotGiven')
-                        questionStatus.classList.remove('answerGiven')
-                    }   
-                }
+            if (typeof(this.getCurrentQuestion.selectedAnswer.text) == typeof('')) {
+                let questionStatus = document.getElementById(this.getCurrentQuestion.id)
+                questionStatus.classList.remove('answerNotGiven')
+                questionStatus.classList.add('answerGiven')
+            } else {
+                let questionStatus = document.getElementById(this.getCurrentQuestion.id)
+                questionStatus.classList.remove('answerGiven')
+                questionStatus.classList.add('answerNotGiven')
             }
         }
     },
