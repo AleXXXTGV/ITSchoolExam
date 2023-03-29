@@ -121,36 +121,7 @@ export const state = () => ({
       course: 2,
       module: 2
     },
-    {
-      text: `Что такое Пк?`,
-      id: Math.random().toString().substr(2, 10),
-      answers: [
-        {
-          text: 'Персональный компьютер',
-          selected: false,
-          id: Math.random().toString().substr(2, 10),
-        },
-        {
-          text: 'Простой компьютер',
-          selected: false,
-          id: Math.random().toString().substr(2, 10),
-        },
-        {
-          text: 'Первый компьютер',
-          selected: false,
-          id: Math.random().toString().substr(2, 10),
-        },
-        {
-          text: 'Переносной компьютер',
-          selected: false,
-          id: Math.random().toString().substr(2, 10),
-        },
-      ],
-      correctAnswer: `Персональный компьютер`,
-      selectedAnswer: {},
-      course: 3,
-      module: 1
-    },
+   
     {
       text: `Наименьшее по размеру устройство`,
       id: Math.random().toString().substr(2, 10),

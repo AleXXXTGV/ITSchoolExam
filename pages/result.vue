@@ -37,7 +37,7 @@ export default {
         },
         maxBalls() {
             let ball = 100 / this.currentCourseAndModule.length
-            let maxBall = ball * Number(localStorage.getItem('correctAnswers'))
+            let maxBall = Math.round(ball * Number(localStorage.getItem('correctAnswers')))
             return maxBall
         }
     },

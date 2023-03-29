@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="question__buttons flex justify-between items-center w-full gap-[200px]">
-                <a @click="checkQuestionsStatus()  | previousQuestion()" class="question__previous text-[36px] cursor-pointer">Предыдущий</a>
+                <a @click="checkQuestionsStatus()  | previousQuestion()" class="question__previous text-[36px] cursor-pointer" :class="firstQuestion">Предыдущий</a>
                 <a @click="checkQuestionsStatus()  | nextQuestion()" class="question__next text-[36px] cursor-pointer" v-show="!finish">Следующий</a>
                 <nuxt-link to="/result" v-show="finish" class="text-[36px]"><button class="block w-full"
                         @click="checkAnswers">Завершить</button></nuxt-link>
@@ -100,6 +100,11 @@ export default {
             } else {
                 return false
             }
+        },
+        firstQuestion() {
+            if (this.counter == 0) {
+                return false
+            } else return true
         },
         // show minutes
         timerMinutes() {
