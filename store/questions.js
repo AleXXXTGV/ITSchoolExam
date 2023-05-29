@@ -6,17 +6,17 @@ export const state = () => ({
       id: Math.random().toString().substr(2, 10),
       answers: [
         {
-          text: 'Утка',
+          text: 'Язык киборгов',
           selected: false,
           id: Math.random().toString().substr(2, 10),
         },
         {
-          text: 'Краб',
+          text: 'Язык кибертекста',
           selected: false,
           id: Math.random().toString().substr(2, 10),
         },
         {
-          text: 'Гусь',
+          text: 'Язык киберстилей',
           selected: false,
           id: Math.random().toString().substr(2, 10),
         },
@@ -32,35 +32,726 @@ export const state = () => ({
       module: 1
     },
     {
-      text: `Что такое CSS ?`,
+      text: `head нужен для?`,
       id: Math.random().toString().substr(2, 10),
       answers: [
         {
-          text: 'Крем',
+          text: 'Настройки сайта',
           selected: false,
           id: Math.random().toString().substr(2, 10),
         },
         {
-          text: 'Торт',
+          text: 'верстки сайта',
           selected: false,
           id: Math.random().toString().substr(2, 10),
         },
         {
-          text: 'Пряник',
+          text: 'адаптива сайта',
           selected: false,
           id: Math.random().toString().substr(2, 10),
         },
         {
-          text: 'Каскадная таблица стилей',
+          text: 'это атрибут',
           selected: false,
           id: Math.random().toString().substr(2, 10),
         },
       ],
-      correctAnswer: `Каскадная таблица стилей`,
+      correctAnswer: `Настройки сайта`,
       selectedAnswer: {},
       course: 1,
       module: 1
     },
+    {
+      text: `body нужен для ?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'отображения верстки всего сайта',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'для стилей',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'для логики сайта',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'это атрибут',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `отображения верстки всего сайта`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `h1-h6 это ?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'Заголовки для контента',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'блоки',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'подключение картинок',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'подключение видео',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `Заголовки для контента`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `самый большой заголовок?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'h1',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'h10',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'h12',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'h3',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `h1`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `самый маленький заголовок?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'h10',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'h12',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'h6',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'h1',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `h6`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `список без нумирации`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'ol',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'li',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'ul',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'td',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `ul`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `список с нумирацией`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'ul',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'ol',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'li',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'td',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `ol`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `тэг картинок?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'image',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'src',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'img',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'alt',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `img`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `главный атрибут для отображение картинки`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'src',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'alt',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'image',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'rev',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `src`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `Где использовать тег title?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'в теге body',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'в теге  header',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'в теге footer',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'в теге head',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `в теге head`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `При помощи какого тега можно создать ссылку в документе?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'a',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'link',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'src',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'b',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `a`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `Какой атрибут используется для определения URL-адреса в ссылке?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'alt',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'href',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'name',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'link',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `href`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `Элемент div является строчным или блочным элементом?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'строчным',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'блочным',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'является как строчным, так и блочным элементом',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'ни тем ни другим',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `блочным`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `как подключать файл css`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'link',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'src',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'href',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'rel',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `link`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `font-family - это?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'жирность текста',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'размер текста',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'стиль текста',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'семейство текста',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `семейство текста`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `background-color - это`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'цвет фона',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'картинка фона',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'видео фона',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'текст фона',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `цвет фона`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `position - это`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'позиционирование',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'стиль цвета',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'фон',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'ширина',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `позиционирование`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `media - это?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'функция для анимаций',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'построение элементов',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'адаптив',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'покраска элементов',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `адаптив`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `Что возвращает "arr.length"`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'значение одного элемента из массива',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'Целый массив',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'длину массива',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'объект',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `длину массива`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `зачем нужны циклы?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'для функций',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'для повторения кода',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'для назначения переменной',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'для детализации кода',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `для повторения кода`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `let - это?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'назначение константы',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'массив',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'назначение пермененной',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'функция',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `назначение пермененной`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `const - это?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'назначение константы',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'массив',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'назначение пермененной',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'функция',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `назначение константы`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: `array - это?`,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: 'массив',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'назначение пермененной',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'назначение константы',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: 'объект',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: `массив`,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+    {
+      text: ``,
+      id: Math.random().toString().substr(2, 10),
+      answers: [
+        {
+          text: '',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: '',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: '',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+        {
+          text: '',
+          selected: false,
+          id: Math.random().toString().substr(2, 10),
+        },
+      ],
+      correctAnswer: ``,
+      selectedAnswer: {},
+      course: 1,
+      module: 1
+    },
+
     {
       text: `Что такое Python ?`,
       id: Math.random().toString().substr(2, 10),
