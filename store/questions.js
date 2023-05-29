@@ -722,31 +722,31 @@ export const state = () => ({
       module: 1
     },
     {
-      text: ``,
+      text: `if-else - это?`,
       id: Math.random().toString().substr(2, 10),
       answers: [
         {
-          text: '',
+          text: 'условие',
           selected: false,
           id: Math.random().toString().substr(2, 10),
         },
         {
-          text: '',
+          text: 'массив',
           selected: false,
           id: Math.random().toString().substr(2, 10),
         },
         {
-          text: '',
+          text: 'функция',
           selected: false,
           id: Math.random().toString().substr(2, 10),
         },
         {
-          text: '',
+          text: 'обработчик событий',
           selected: false,
           id: Math.random().toString().substr(2, 10),
         },
       ],
-      correctAnswer: ``,
+      correctAnswer: `условие`,
       selectedAnswer: {},
       course: 1,
       module: 1
